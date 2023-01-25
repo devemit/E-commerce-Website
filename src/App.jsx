@@ -9,7 +9,7 @@ import Cart from './pages/Cart';
 
 const App = () => {
   return (
-    <div className='py-8'>
+    <div className='py-6'>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
