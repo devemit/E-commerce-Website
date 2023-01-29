@@ -6,14 +6,16 @@ const Home = () => {
     <>
       <div className='w-full mx-auto relative'>
         <div className='absolute w-full h-full flex flex-col max-h-[500px] justify-center'>
-          <h1 className='px-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-slate-200'>
+          <h1 className='px-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-orange-500'>
             The Future of
           </h1>
-          <h1 className='px-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-slate-200'>
+          <h1 className='px-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-orange-500'>
             Commerce is Yours
           </h1>
-          <Link className='px-4 py-8' to='/shop'>
-            <span className='py-4 px-10 md:py-6 md:px-14 bg-violet-400 text-black font-bold uppercase rounded-xl'>
+
+          <hr className='my-4 md:w-11/12 w-5/6 mx-auto' />
+          <Link className='px-12 py-10' to='/shop'>
+            <span className='py-4 px-10 md:py-6 md:px-14 bg-orange-500 text-white font-bold uppercase rounded-xl'>
               Shop now
             </span>
           </Link>
