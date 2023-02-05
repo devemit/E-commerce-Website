@@ -53,15 +53,15 @@ const Navbar = () => {
 
           {cartItems.length > 0 && (
             <div className='absolute'>
-              <span className='p-1 ml-4 text-white text-xs font-semibold rounded-full bg-red-600'>
+              <span className='px-2 py-1 ml-2 text-white text-xs font-semibold rounded-full bg-red-600'>
                 {cartItems.length}
               </span>
             </div>
           )}
 
-          <div className='md:hidden' onClick={handleNav}>
+          <div className='md:hidden z-50' onClick={handleNav}>
             {nav ? (
-              <AiOutlineClose size={25} className='text-slate-100' />
+              <AiOutlineClose size={25} className='text-slate-900' />
             ) : (
               <AiOutlineMenu size={25} className='text-slate-100' />
             )}
