@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
 import { ApiContext } from '../contexts/ApiContext';
 import Product from '../components/Product';
+import Pagination from '../components/Pagination';
 
 const Shop = () => {
-  const { items } = useContext(ApiContext);
+  const { display } = useContext(ApiContext);
   return (
-    <div className='grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 py-20'>
-      {items.map((item) => (
+    <div className='grid lg:grid-cols-5 sm:grid-cols-2 md:grid-cols-2 py-20 bg-slate-200'>
+      {display.map((item) => (
         <div key={item.id}>
           <Product
             product={item}
@@ -18,6 +19,7 @@ const Shop = () => {
           ></Product>
         </div>
       ))}
+      <Pagination />
     </div>
   );
 };

@@ -10,35 +10,35 @@ const Navbar = () => {
   const { handleNav, nav, setNav, cartItems } = useContext(ApiContext);
 
   return (
-    <div className='mx-auto px-12 py-6 bg-gray-900 w-full top-0 fixed z-10'>
+    <div className='mx-auto px-12 py-6 w-full top-0 fixed z-10 bg-white'>
       {/* Medium,Large */}
       <nav className='flex items-center justify-between'>
-        <h1 className='md:text-4xl sm:text-3xl text-2xl font-semibold text-slate-200'>
-          Ratio
+        <h1 className='md:text-4xl sm:text-3xl text-2xl font-semibold text-slate-500'>
+          Ratio Store
         </h1>
 
         <ul className='md:flex hidden justify-between items-center'>
           <Link
             to='/'
-            className='text-xl text-slate-100 px-6 hover:underline focus:underline'
+            className='text-xl text-slate-500 px-6 hover:underline focus:underline'
           >
             Home
           </Link>
           <Link
             to='/shop'
-            className='text-xl text-slate-100 px-6 hover:underline focus:underline'
+            className='text-xl text-slate-500 px-6 hover:underline focus:underline'
           >
             Shop
           </Link>
           <Link
             to='/about'
-            className='text-xl text-slate-100 px-6 hover:underline focus:underline'
+            className='text-xl text-slate-500 px-6 hover:underline focus:underline'
           >
             About
           </Link>
           <Link
             to='/contact'
-            className='text-xl text-slate-100 px-6 hover:underline focus:underline'
+            className='text-xl text-slate-500 px-6 hover:underline focus:underline'
           >
             Contact
           </Link>
@@ -47,7 +47,7 @@ const Navbar = () => {
           <Link to='/cart'>
             <RiShoppingCart2Line
               size={25}
-              className='mx-8 cursor-pointer text-slate-100 hover:text-gray-600 z-10'
+              className='mx-8 cursor-pointer text-slate-500 hover:text-gray-600 z-10'
             />
           </Link>
 
@@ -61,9 +61,9 @@ const Navbar = () => {
 
           <div className='md:hidden z-50' onClick={handleNav}>
             {nav ? (
-              <AiOutlineClose size={25} className='text-slate-900' />
+              <AiOutlineClose size={25} className='text-slate-500' />
             ) : (
-              <AiOutlineMenu size={25} className='text-slate-100' />
+              <AiOutlineMenu size={25} className='text-slate-500' />
             )}
           </div>
         </div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200&family=Nunito+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,6 +8,19 @@ html,
 body,
 #root,
 .app {
-  font-family: 'Roboto';
-  background-color: white;
+  font-family: 'Alkatra';
+}
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60rem;
+}
+
+.active {
+  background: #333;
+  padding: 0.15rem 0.55rem;
+  margin: 0.4rem;
+  color: white;
+  font-size: 1.5rem;
 }

@@ -9,7 +9,7 @@ import Cart from './pages/Cart';
 
 const App = () => {
   return (
-    <div className='py-14'>
+    <>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -18,7 +18,7 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='/cart' element={<Cart />} />
       </Routes>
-    </div>
+    </>
   );
 };
 

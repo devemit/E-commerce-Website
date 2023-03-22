@@ -7,6 +7,13 @@ import { SHOW_HIDE_CART, ADD_TO_CART, REMOVE_ITEM } from './Types';
 const Store = ({ children }) => {
   const [items, setItems] = useState([]);
   const [nav, setNav] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsToDisplay, setItemsToDisplay] = useState(10);
+
+  const firstPage = currentPage * itemsToDisplay; // 10
+  const startVal = firstPage - itemsToDisplay;
+  const display = items.slice(startVal, firstPage);
+
   const initialState = {
     showCart: false,
     cartItems: [],
@@ -51,10 +58,13 @@ const Store = ({ children }) => {
     }
   };
 
-
   return (
     <ApiContext.Provider
       value={{
+        display,
+        itemsToDisplay,
+        setCurrentPage,
+        currentPage,
         items,
         setItems,
         nav,
@@ -66,7 +76,6 @@ const Store = ({ children }) => {
         showHideCart,
         removeItem,
         truncateStr,
-        
       }}
     >
       {children}
