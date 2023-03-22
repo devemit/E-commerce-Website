@@ -10,7 +10,7 @@ const Pagination = () => {
   }
 
   return (
-    <div className='pages'>
+    <div className='pages bg-slate-200'>
       {pages.map((page) => {
         return (
           <button

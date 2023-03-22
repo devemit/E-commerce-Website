@@ -10,7 +10,7 @@ const Navbar = () => {
   const { handleNav, nav, setNav, cartItems } = useContext(ApiContext);
 
   return (
-    <div className='mx-auto px-12 py-6 w-full top-0 fixed z-10 bg-white'>
+    <div className='mx-auto px-12 py-6 w-full fixed top-0 z-10 bg-white'>
       {/* Medium,Large */}
       <nav className='flex items-center justify-between'>
         <h1 className='md:text-4xl sm:text-3xl text-2xl font-semibold text-slate-500'>
@@ -74,7 +74,7 @@ const Navbar = () => {
           onClick={() => setNav(false)}
           className={
             nav
-              ? 'fixed top-0 left-0 flex flex-col justify-center items-center bg-white opacity-90 w-[100%] h-[100%] uppercase ease-in-out duration-500 pt-16 z-10'
+              ? 'fixed top-0 left-0 flex flex-col justify-center items-center bg-white w-[100%] h-[100%] uppercase ease-in-out duration-500 pt-16 z-10'
               : 'fixed top-[-100%]'
           }
         >

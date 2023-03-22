@@ -14,9 +14,7 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 60rem;
 }
-
 .active {
   background: #333;
   padding: 0.15rem 0.55rem;
